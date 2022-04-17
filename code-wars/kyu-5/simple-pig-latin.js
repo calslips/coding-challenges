@@ -14,3 +14,7 @@ function pigIt(str) {
     return letters.join('');
   }).join(' ');
 }
+
+// function pigIt(str) {
+//   return str.replace(/\w+/g, w => `${w.slice(1)}${w[0]}ay`);
+// }
