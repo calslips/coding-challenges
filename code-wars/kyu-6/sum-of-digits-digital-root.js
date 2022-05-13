@@ -27,3 +27,28 @@ function digital_root(n) {
 //     ? n
 //     : digital_root(n.toString().split('').reduce((sum, num) => +num + sum, 0));
 // }
+
+/*
+Parameters: single number value, always positive
+Return: recursively add each digit together until sum is a single digit value
+Examples:
+  digital_root(321) // 6
+  digital_root(641) // 11 => 2
+  digital_root(739256) // 32 => 5
+Pseudocode:
+  base case
+    check if n is single digit, return if so
+
+  recursive case
+    convert number to string
+    spread string into an array where each element is a singular string digit
+    convert each element into number value
+    sum together all the elements
+    pass sum value into new digital_root function call
+*/
+
+function digital_root(n) {
+  return n < 10
+    ? n
+    : digital_root([...n.toString()].reduce((s, n) => s + +n, 0));
+}
