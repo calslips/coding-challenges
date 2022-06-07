@@ -29,4 +29,6 @@ Pseudocode:
     multiply n by recursive call to factorial with the argument decremented (--n)
 */
 
-const factorial = n => n === 1 || !n ? 1 : n * factorial(--n);
+const factorial = n => n > 1 ? n * factorial(--n) : 1;
+
+// const factorial = n => n === 1 || !n ? 1 : n * factorial(--n);
