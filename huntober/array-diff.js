@@ -16,8 +16,11 @@ function arrayDiff(a1, a2) {
       // keep it in
   // return filtered array
 
-  if (!(a1.length && a2.length)) return a1;
-  return a1.filter(n => !a2.includes(n));
+  // if (!(a1.length && a2.length)) return a1;
+  // return a1.filter(n => !a2.includes(n));
+
+  let newSet = new Set(a2); // converting array to set is linear
+  return a1.filter(n => !newSet.has(n)) // set method .has() is constant time
 }
 
 console.log(arrayDiff([1, 2], [1]), [2])
