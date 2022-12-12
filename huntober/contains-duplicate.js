@@ -46,6 +46,12 @@ const containsDuplicate = function(nums) {
   return false;
 }
 
+// runtime beats 65.95%, memory beats 40.30%
+const containsDuplicate = function(nums) {
+  const numsSet = new Set(nums);
+  return numsSet.size !== nums.length;
+}
+
 // Examples
 
 // Input: nums = [1,2,3,1]
