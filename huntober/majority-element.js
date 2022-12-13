@@ -25,6 +25,16 @@ const majorityElement = function(nums) {
   }
 };
 
+// runtime beats 92.51%, memory beats 11.65%
+const majorityElement = function(nums) {
+  // sort nums
+  // return the element at the middle index
+  // (as there is always a majority (freq > half),
+  // the num at the middle index WILL BE that majority)
+
+  return [...nums].sort((a, b) => a - b)[Math.round(nums.length / 2) - 1];
+};
+
 // Examples
 
 // Input: nums = [3,2,3]
