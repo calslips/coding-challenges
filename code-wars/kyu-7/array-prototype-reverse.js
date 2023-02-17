@@ -28,6 +28,11 @@ Pseudocode:
 */
 
 Array.prototype.reverse = function() {
+  for (let i = 0; i < (l = this.length) / 2; i++) [this[i], this[l - 1 - i]] = [this[l - 1 - i], this[i]];
+  return this;
+};
+
+Array.prototype.reverse = function() {
   for (let i = 0; i < Math.floor((l = this.length) / 2); i++) [this[i], this[l - 1 - i]] = [this[l - 1 - i], this[i]];
   return this;
 };
