@@ -34,7 +34,7 @@ import java.util.Deque;
 import java.util.ArrayDeque;
 
 // runtime 7 ms beats 6.35%, memory 41 mb beats 9.50%
-class Solution {
+class ValidParenthesesSolution {
     public boolean isValid(String s) {
         if (s.length() % 2 == 1) return false;
         Deque<String> stack = new ArrayDeque<>();

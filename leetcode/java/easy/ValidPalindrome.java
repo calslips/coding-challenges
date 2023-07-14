@@ -35,7 +35,7 @@ Pseudocode:
 */
 
 // runtime 3 ms beats 97.93%, memory 41.9 mb beats 88.64%
-class Solution {
+class ValidPalindromeSolution {
     public boolean isPalindrome(String s) {
         for (int i = 0, j = s.length() - 1; i < j; i++, j--) {
             while (i < j && !Character.isLetterOrDigit(s.charAt(i))) i++;

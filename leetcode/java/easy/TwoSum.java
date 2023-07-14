@@ -42,7 +42,7 @@ Pseudocode:
 import java.util.Map;
 import java.util.HashMap;
 
-class Solution {
+class TwoSumSolution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
         int[] indices = new int[2];

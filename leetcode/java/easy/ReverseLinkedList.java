@@ -55,7 +55,7 @@ class ListNode {
 
 // iterative
 // runtime 0 ms beats 100%, memory 41.3 mb beats 74.89%
-class IterativeSolution {
+class ReverseLinkedListIterativeSolution {
   public ListNode reverseList(ListNode head) {
       ListNode prev = null;
       while (head != null) {
@@ -70,7 +70,7 @@ class IterativeSolution {
 
 // recursive
 // runtime 0 ms beats 100%, memory 41.9 mb beats 21.86%
-class RecursiveSolution {
+class ReverseLinkedListRecursiveSolution {
     public ListNode reverseList(ListNode head) {
         return reverseList(head, null);
     }

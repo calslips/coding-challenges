@@ -35,7 +35,7 @@ Pseudocode:
 */
 
 // runtime 0 ms beats 100%, memory 45 mb beats 36.48%
-class Solution {
+class BinarySearchSolution {
   public int search(int[] nums, int target) {
       for (int s = 0, e = nums.length - 1, m = (s + e) / 2; s <= e; m = (s + e) / 2) {
           if (nums[m] == target) return m;

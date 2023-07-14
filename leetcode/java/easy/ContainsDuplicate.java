@@ -29,7 +29,7 @@ Pseudocode:
 import java.util.Set;
 import java.util.HashSet;
 
-class Solution {
+class ContainsDuplicateSolution {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> nonDupes = new HashSet<>();
         for (int num : nums) {

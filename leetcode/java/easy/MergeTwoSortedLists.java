@@ -64,7 +64,7 @@ package leetcode.java.easy;
  */
 
 // runtime 0 ms beats 100%, memory 41.6 mb beats 46.76%
-class IterativeSolution2 {
+class MergeTwoSortedListsIterativeSolution2 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null) return list2;
         if (list2 == null) return list1;
@@ -86,7 +86,7 @@ class IterativeSolution2 {
 }
 
 // runtime 0 ms beats 100%, memory 41.5 mb beats 58.36%
-class IterativeSolution1 {
+class MergeTwoSortedListsIterativeSolution1 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null) return list2;
         if (list2 == null) return list1;
@@ -121,7 +121,7 @@ class IterativeSolution1 {
 }
 
 // runtime 0 ms beats 100%, memory 41.8 mb beats 35.34%
-class RecursiveSolution {
+class MergeTwoSortedListsRecursiveSolution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null) return list2;
         if (list2 == null) return list1;

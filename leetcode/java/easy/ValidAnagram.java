@@ -39,7 +39,7 @@ Pseudocode:
   return true
 */
 
-class Solution {
+class ValidAnagramSolution {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) return false;
         int[] count = new int[26];

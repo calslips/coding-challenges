@@ -30,7 +30,7 @@ Pseudocode:
 */
 
 // runtime 1 ms beats 99.90%, memory 61.4 mb beats 22.77%
-class Solution {
+class BestTimeToBuyAndSellStockSolution {
     public int maxProfit(int[] prices) {
         int max = 0;
         for (int low = 0, high = 1; high < prices.length; high++) {
